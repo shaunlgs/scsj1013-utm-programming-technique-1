@@ -112,7 +112,7 @@ setprecision(number): significant number
 
 setprecision(number) and fixed: decimal points
 
-showpoint: show decimal points (even for those with no decimal numbers)
+showpoint: show zeros to match setprecision
 
 ```c
 // Program 5.7
