@@ -372,3 +372,9 @@ int main ()
     return 0;
 }
 ```
+
+Difference between break and continue:
+
+Break: will stop the loop
+
+Continue: will continue the loop but just skipped current iteration
