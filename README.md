@@ -107,6 +107,9 @@ int main ()
 ```
 
 Stream manipulator:
+setprecision(number): significant number
+setprecision(number) and fixed: decimal points
+showpoint: show decimal points (even for those with no decimal numbers)
 ```c
 // Program 5.7
 #include <iostrea>
