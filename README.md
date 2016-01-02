@@ -17,7 +17,7 @@ int main()
 }
 ```
 
-# Pseudocode and flowchart using Microsoft Word
+# Pseudocode and flowchart
 
 Example of pseudocode:
 ```
@@ -62,7 +62,10 @@ c=static_cast<int>(x/a);
 c=static_cast<int>(x)/static_cast<int>(y);
 ```
 
-Input & Output:
+# Input & Output
+
+## Screen input & output
+
 ```c
 // cout, cin
 #include <iostream>
@@ -82,7 +85,8 @@ int main ()
 }
 ```
 
-File input & output:
+## File input & output
+
 ```c
 // include fstream, ifstream, .open()
 #include <iostream>
@@ -108,7 +112,7 @@ int main ()
 }
 ```
 
-Stream manipulator:
+## Stream manipulator
 
 setw(5) - will create 5 spaces to display at console, if the thing to be displayed is less than 5, it will move to the right.
 
@@ -318,7 +322,14 @@ int main ()
   </tr>
 </table>
 
-Selection or decision:
+# Selection or decision
+
+- if, else if, else
+- switch
+
+[If, else flowchart](media/if-else-flowchart.gif)
+[If, else if, else flowchart](media/if-elseif-else-flowchart.jpg)
+
 ```c
 // if, else if, else
 #include <iostream>
@@ -345,6 +356,8 @@ int main ()
     return 0;
 }
 ```
+
+[switch flowchart](media/switch-flowchart.png)
 
 ```c
 // switch
@@ -384,6 +397,154 @@ Break: will stop the loop
 
 Continue: will continue the loop but just skipped current iteration
 
+# Looping
+
+## while loop
+
+```
+while (condition)
+{     
+    statement(s);
+}
+```
+
+First, condition is evaluated
+if it is true, the statement(s) are executed, and then condition is evaluated again
+if it is false, the loop is exited
+
+[while loop flowchart](media/while-loop-flowchart.png)
+
+```cpp
+int val = 5;
+while (val >= 0)
+{   cout << val << endl;
+    val -= 1;
+}
+ /* output
+ 5
+ 4
+ 3
+ 2
+ 1
+ 0
+ */
+```
+
+### Use while loop for input validation
+
+```cpp
+#include <iostream>
+using namespace std;
+int main()
+{   
+    int data, sum=0;
+    cin >> data;
+
+    while (data != 0)
+    {     sum += data;
+          cin >> data;
+    }
+
+    cout<< "The sum: " << sum << endl;
+
+    system("PAUSE");
+    return 0;
+}
+```
+
+## do while loop
+
+```
+do
+{     
+    statement(s);
+}
+while (condition);
+```
+
+First, the loop is executed once, then only check condition,
+if it is true, the statement(s) are executed, and then condition is evaluated again
+if it is false, the loop is exited
+
+[do-while loop flowchart](media/do-while-loop-flowchart.png)
+
+```cpp
+int mark;
+
+do
+{
+    cout << "Enter marks for test 1: ";
+    cin >> mark;    
+}
+while((mark < 0) || (mark > 100));
+
+cout << "Your mark for test 1 is " << mark << endl;
+```
+
+## for loop
+
+```
+for(initialization; test; update)
+{
+    statement(s);
+}
+```
+
+[for loop steps](media/for-loop-steps.png)
+
+[for loop flowchart](media/for-loop-flowchart.gif)
+
+```cpp
+int sum = 0;
+
+for (int num = 1; num <= 10; num++)
+{
+    sum += num;   
+}
+
+cout << "Sum of numbers 1 – 10 is " << sum << endl;
+```
+
+## Sentinel value/ Counter
+
+Sentinel value/ Counter is placed at condition of loop to determine when the loop will stop
+
+```cpp
+int total = 0;
+
+cout << "Enter points earned " << "(or -1 to quit): ";
+cin  >> points;
+
+while (points != -1) // -1 is the sentinel
+{
+   total += points;  
+   cout << "Enter points earned: ";
+   cin  >> points;
+}   
+```
+
+## Nested loop
+
+A nested loop is a loop inside the body of another loop.
+Inner loop goes through all its repetitions for each repetition of outer loop
+
+```cpp
+int main()
+int x, y;
+for(x=1; x<=8; x+=2)
+{
+   for(y=x; y<=10; y+=3)
+   {
+     cout << "x = " << x << " y = " << y << endl;
+   }
+}
+```
+
+## Breaking out of loop
+
+Break: Can use break to terminate execution of a loop.
+Continue: Can use continue to go to end of loop and prepare for next repetition
+
 # Function
 
 ## Pass by value 
@@ -392,6 +553,7 @@ when an argument is passed to a function, its value is copied into the parameter
 Changes to the parameter in the function do not affect the value of the argument 
 
 [Demo of passing by value](function/pass-by-value-demo.cpp)
+
 [Demo of passing by value and it doesn't change the value of argument](function/pass-by-value-does-not-change-value.cpp)
 
 ## Pass by reference
