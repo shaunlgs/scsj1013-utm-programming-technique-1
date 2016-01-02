@@ -328,6 +328,7 @@ int main ()
 - switch
 
 [If, else flowchart](media/if-else-flowchart.gif)
+
 [If, else if, else flowchart](media/if-elseif-else-flowchart.jpg)
 
 ```c
