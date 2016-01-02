@@ -114,9 +114,11 @@ setw(5) - will create 5 spaces to display at console, if the thing to be display
 
 left, right - will make the thing to be displayed to be left of right within setw() length
 
-setprecision(2) - display 2 decimal point, but won't work without using together with fixed, without using together with fixed, it will display number of decimals of the number
+setprecision(number): significant number
 
-fixed - used together with setprecision
+setprecision(number) and fixed: decimal points
+
+showpoint: show zeros to match setprecision
 
 ```c
 #include <iostrea>
@@ -375,6 +377,12 @@ int main ()
     return 0;
 }
 ```
+
+Difference between break and continue:
+
+Break: will stop the loop
+
+Continue: will continue the loop but just skipped current iteration
 
 # Function
 
