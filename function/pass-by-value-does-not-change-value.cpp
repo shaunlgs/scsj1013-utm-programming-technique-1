@@ -18,3 +18,11 @@ int main() {
 	system("pause");
 	return 0;
 }
+
+/* output
+The integer m = 612
+Calling f( m )...
+Inside f( int ), the value of the parameter is 612
+Inside f( int ), the modified parameter is now 649
+The integer m = 612
+*/

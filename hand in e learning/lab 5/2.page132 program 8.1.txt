@@ -1,0 +1,5 @@
+1. Predefined function is a function that is built into the C++ language. It performs some standard operations. It is stored in the Standard Function Library. Programmer-defined function is written by the program in source code. It has a function prototype and implementation. Both predefined function and programmer-defined function can be called.
+
+2. cout, cin are predefined library functions and iostream contains the definition. pow, sqrt functions are contained in cmath. setprecision is defined in iomanip.
+
+3. During preprocessing, the preprocessor copy the include file and paste it into the source code.

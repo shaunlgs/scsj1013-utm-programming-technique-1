@@ -544,6 +544,7 @@ for(x=1; x<=8; x+=2)
 ## Breaking out of loop
 
 Break: Can use break to terminate execution of a loop.
+
 Continue: Can use continue to go to end of loop and prepare for next repetition
 
 # Function

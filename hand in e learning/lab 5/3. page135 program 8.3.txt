@@ -1,0 +1,31 @@
+i. getAnInteger, calculateAverage, displayAverage.
+
+ii. int getAnInteger (void), float calculateAverage (int x, int y, int z), void displayAverage (float avg). getAnInteger does not expect any argument and returns an int. calculateAverage expects three int arguments and return a float. displayAverage expects a float argument and returns nothing.
+
+iii. num1 = getAnInteger(); num2 = getAnInteger(); num3 = getAnInteger(); calculateAverage(num1, num2, num3); displayAverage(average);
+
+iv. a. function header b. function call c. function call d. function header
+
+v. int num1, num2, num3;
+    float average;
+    num1 = getAnInteger();
+    num2 = getAnInteger();
+    num3 = getAnInteger();
+    average = calculateAverage(num1, num2, num3);
+    displayAverage(average);
+    cout << "\n\nEnd of program";
+    system("pause");
+    return 0;
+
+vi. getAnInteger:
+int value;
+    cout << "Enter an integer: ";
+    cin >> value;
+    return (value);
+
+calculateAverage:
+return (x+y+z)/3.0;
+
+displayAverage:
+ cout << "The average of your 3 numbers is ";
+ cout << avg << ".\n";

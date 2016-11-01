@@ -18,3 +18,7 @@ int main()
     system("pause");
     return 0;
 }
+
+/* output
+x=2, y=6, z=14
+*/

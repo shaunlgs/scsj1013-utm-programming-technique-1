@@ -1,0 +1,3 @@
+i. A function prototype eliminates the need to place a function definition before all calls to the function. You need function prototype when you call the function before you define it.
+
+ii. The only difference between the function prototype and the function header is a semicolon.

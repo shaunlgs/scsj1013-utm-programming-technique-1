@@ -1,0 +1,25 @@
+Artifex Ghostscript 8.60 (2007-08-01)
+Copyright (C) 2007 Artifex Software, Inc.  All rights reserved.
+This software comes with NO WARRANTY: see the file PUBLIC for details.
+peelstring status: true: '% Copyright'
+Loading NimbusMonL-Regu font from %rom%lib/n022003l.pfb... 2525544 1192918 1825328 528518 1 done.
+%%[ ProductName: Artifex Ghostscript ]%%
+%%[Page: 1]%%
+%%[Page: 2]%%
+%%[Page: 3]%%
+%%[Page: 4]%%
+%%[Page: 5]%%
+%%[Page: 6]%%
+%%[Page: 7]%%
+%%[Page: 8]%%
+%%[Page: 9]%%
+%%[Page: 10]%%
+%%[Page: 11]%%
+%%[Page: 12]%%
+%%[LastPage]%%
+ ps2pdf -sDEVICE=pdfwrite -dNOPAUSE -dNOSAFER -dAutoRotatePages=/PageByPage -r72
+ -dEncodeColorImages=false -dDownsampleColorImages=true -dColorImageDownsampleType=/Subsample -dEncodeGrayImages=false -dDownsampleGrayImages=true
+ -dGrayImageDownsampleType=/Subsample -dDownsampleMonoImages=true -dMonoImageDownsampleType=/Subsample -dMonoImageResolution=72 -sFONTPATH=C:\Windows\Fonts
+ -dEmbedAllFonts=true -dSubsetFonts=true -dUseFlateCompression=false -dCompatibilityLevel=1.4 -sstdout=C:\ProgramData\tmp3F0E.log
+ -sOutputFile=C:\ProgramData\tmp3F0E.tmp -c .setpdfwrite <</NeverEmbed [false .standardfonts aload pop]>> setdistillerparams
+ -f
